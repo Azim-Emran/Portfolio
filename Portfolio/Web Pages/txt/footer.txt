@@ -1,1 +1,0 @@
-document.write(`<footer><h6>Designed by Abdul Azim bin Haji Emran</h6></footer>`);
