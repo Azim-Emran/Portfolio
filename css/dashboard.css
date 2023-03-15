@@ -93,26 +93,31 @@
 }
 
 /* CONTACT ME */
+
+.inner-container{
+    background-color: white;
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px black;
+    padding: 25px 15px;
+
+}
 .contact-me-container {
     position: fixed;
     z-index: 2000;
     margin: auto;
-    background-color: white;
     height: 500px;
-    width: 500px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 25px 15px;
 
     opacity: 0;
     transition: all 0.3s ease-in-out;
     pointer-events: none;
     /* set to none by default */
 
-    border-radius: 10px;
-    box-shadow: 0 1px 8px black;
 }
 
 .contact-me-container.show {
