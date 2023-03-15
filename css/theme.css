@@ -270,3 +270,35 @@ footer {
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    border: none;
+}
+
+.p-container {
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.section-container {
+    margin-top: 50px;
+}
+
+section{
+    min-height:500px;
+    margin-bottom:100px;
+}
+
+

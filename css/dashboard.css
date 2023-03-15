@@ -1,28 +1,3 @@
-.title-container {
-    display: flex;
-    align-items: center;
-}
-
-h1 {
-    margin-right: 10px;
-}
-
-
-hr {
-    width: 100%;
-    height: 1px;
-    background-color: grey;
-    border: none;
-}
-
-.p-container {
-    overflow: hidden;
-    line-height: 1.5;
-}
-
-.section-container {
-    margin-top: 50px;
-}
 
 /* INTRO */
 .intro-link {
@@ -225,4 +200,55 @@ hr {
 
 .pointer-cursor {
     cursor: pointer;
+}
+
+.contact-me-list{
+    text-align:center;
+    padding:20px 0;
+}
+
+[class^="contact-me-btn-"]{
+    text-align:center;
+    border-radius:15px;
+    font-weight: bold;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+    padding:15px;
+
+}
+
+.contact-me-btn-1{
+    background-color:royalblue;
+    color:white;
+}
+
+
+.contact-me-btn-2{
+    background-color:#25D366;
+    color:white;
+}
+
+header{
+    height:500px;
+    background-color:black;
+    color:white;    
+    padding:15px;
+    text-align: center;
+    top:auto;
+    bottom:auto;
+    left:auto;
+    right:auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    font-size: 48px;
+    background-image: linear-gradient(to right, rgb(0, 244, 0), #00f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
