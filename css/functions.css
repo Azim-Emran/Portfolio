@@ -1,0 +1,156 @@
+
+/* DISPLAY HISTORY */
+.d-history-container{
+    background-color:royalblue;
+    width:100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text-area {
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 6em;
+    resize: none;
+    padding: 7px;
+    margin-top:15px;
+}
+
+.text-area:focus{
+    outline: none !important;
+    border-bottom:4px solid blue;
+    box-shadow: 0 0 10px black;
+}
+
+.btn-div {
+    text-align: center;
+    margin: 0 15px;
+}
+.function-button {
+    height: 3em;
+    border-radius: 5px;
+    width: 50%;
+    background-color:royalblue;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.2s;
+    outline: none !important;
+    margin-bottom:10px;
+}
+
+.history-table-container{
+    color:white;
+    border:1px solid white;
+    margin: 15px 15px;
+    border-radius: 10px;   
+    padding:15px; 
+}
+
+.history-table{
+    width:100%;
+    text-align: left;
+}
+
+.history-table th,td{
+    padding:5px;
+}
+
+.history-table td,th{
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+}
+
+/*COLOR*/
+.color-container{
+    height:500px;
+    width:100%;
+    background-color:black;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.color-button{
+    background-color:white;
+    width:200px;
+    padding: 1px 10px;
+    border-radius:15px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*MASTERMIND*/
+
+.game-container{
+    background-color:black;
+    width:100%;
+    height:600px;
+    padding:15px;
+    display: flex;
+    align-items: center; /* vertical centering */
+    justify-content: center; 
+}
+
+.decoding-board{
+    background-color:blue;
+    width:100%;
+    height:90%;
+}
+
+.column-container{
+    background-color: red;
+    height:100%;
+}
+
+.board-column{
+    background-color:green;
+    width:99%;
+    height:100%;
+}
+
+.code-peg-area{
+    background-color: white;
+    height:80%;
+    padding:1px;
+}
+
+.code-peg-container{
+    color:deeppink;
+    height:25%;
+    padding: 1px 1px;
+}
+
+.code-peg-position{
+    background-color: black;
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.key-peg-area{
+    background-color: orange;
+    height:20%;
+}
+
+.key-peg-row{
+    background-color:magenta;
+    width:100%;
+    height:50%;
+}
+.key-peg-container{
+    background-color:dodgerblue;
+    height:100%;
+}
+
+#codePEG12{
+    background-color: darkblue;
+}
+
+#codePEG14{
+    background-color: slateblue;
+}

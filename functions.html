@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display History</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/functions.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav><a href="javascript:void(0);" class="icon-function content-margin" onclick="navBarFunction()">
+                <div class="burger-icon" onclick="burgerFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <ul class="content-margin navbar-list" id="navBarList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#title1"> Display History </a></li>
+                <li><a href="#title2">Change Color</a></li>
+                <li><a href="#title3">Mastermind</a> <small>(Under Construction)</small></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section style="min-height:3000px" class="content-margin">
+                <div class="section-container">
+                    <div class="title-container">
+                        <h1 id="title1">Display History</h1>
+                        <hr>
+                    </div>
+                    <div class="p-container">
+                        <p>This function will display the last 10 messages users entered.</p>
+                    </div>
+                    <div class="row d-history-container">
+                        <textarea id="historyInput" class="text-area" placeholder="Input text here"></textarea>
+                        <div class="btn-div">
+                            <button id="display-history" class="function-button"
+                                onclick="displayHistory('historyInput','display-table')">Display
+                                History</button>
+                        </div>
+                        <div class="btn-div">
+                            <button id="clear-history" class="function-button"
+                                onclick="clearHistory('historyInput','display-table')">Clear
+                                History</button>
+                        </div>
+
+                        <div class="history-table-container content-margin">
+                            <!-- <p id="display-box"></p> -->
+                            <div id="display-table">
+                                <h3>History will be displayed history</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="title-container">
+                        <h1 id="title2">Change Color</h1>
+                        <hr>
+                    </div>
+                    <div class="p-container">
+                        <p>This function will change the colors inside the box below by clicking the button.</p>
+                    </div>
+                    <div class="color-container" id="colorBg">
+                        <div class="color-button" id="colorButton" onclick="changeColor()">
+                            <h3 class="prevent-highlight">Change Color</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="title-container">
+                        <h1 id="title3">Mastermind</h1>
+                        
+                        <hr>
+                    </div>
+                    <small style="color:red;"><i>※Under Construction</i></small>
+                    <div class="p-container">
+                        <p>This function is a minigame. Users are required to guess the correct position and the correct
+                            color pegs.</p>
+                    </div>
+                    <div class="game-container">
+                        <div class="decoding-board row" id="decodingBoard">
+                            <div class="column-container col-2">
+                                <div id="bColumn1" class="board-column">
+                                    <div class="code-peg-area">
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG11"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG12"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG13"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG14"></div>
+                                        </div>
+                                    </div>
+                                    <div class="key-peg-area">
+                                        <div class="row key-peg-row">
+                                            <div class="key-peg-container col-6">
+                                                <div class="key-peg-position"></div>
+                                            </div>
+                                            <div class="key-peg-container col-6"></div>
+                                        </div>
+                                        <div class="row key-peg-row">
+                                            <div class="key-peg-container col-6"></div>
+                                            <div class="key-peg-container col-6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container col-2">
+                                <div id="bColumn2" class="board-column">
+                                    <div class="code-peg-area">
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG21"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG22"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG23"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG24"></div>
+                                        </div>
+                                    </div>
+                                    <div class="key-peg-area">
+                                        <div class="row key-peg-row"></div>
+                                        <div class="row key-peg-row"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container col-2">
+                                <div id="bColumn3" class="board-column">
+                                    <div class="code-peg-area">
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG31"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG32"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG33"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG34"></div>
+                                        </div>
+                                    </div>
+                                    <div class="key-peg-area">
+                                        <div class="row key-peg-row"></div>
+                                        <div class="row key-peg-row"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container col-2">
+                                <div id="bColumn4" class="board-column">
+                                    <div class="code-peg-area">
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG41"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG42"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG43"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG44"></div>
+                                        </div>
+                                    </div>
+                                    <div class="key-peg-area">
+                                        <div class="row key-peg-row"></div>
+                                        <div class="row key-peg-row"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container col-2">
+                                <div id="bColumn5" class="board-column">
+                                    <div class="code-peg-area">
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG51"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG52"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG53"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG54"></div>
+                                        </div>
+                                    </div>
+                                    <div class="key-peg-area">
+                                        <div class="row key-peg-row"></div>
+                                        <div class="row key-peg-row"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-container col-2">
+                                <div id="bColumn6" class="board-column">
+                                    <div class="code-peg-area">
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG61"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG62"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG63"></div>
+                                        </div>
+                                        <div class="code-peg-container">
+                                            <div class="code-peg-position" id="codePEG64"></div>
+                                        </div>
+                                    </div>
+                                    <div class="key-peg-area">
+                                        <div class="row key-peg-row"></div>
+                                        <div class="row key-peg-row"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <script language="javascript" type="text/javascript" src="./txt/footer.txt"></script>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

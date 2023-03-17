@@ -91,6 +91,33 @@
     background-position: center;
     background-size: 300px;
 }
+#Func1Image {
+    background-image: url('../img/img-display-history-1.png');
+    background-position: center;
+    background-size: 500px;
+    transition-duration:0.1s;
+}
+#func1:hover #Func1Image{
+    background-image: url('../img/img-display-history-2.png');
+    background-position: center;
+    background-size: 500px;
+    transition-duration:0.1s;
+
+}
+
+#Func2Image {
+    background-image: url('../img/img-color-change-1.png');
+    background-position: center;
+    background-size: 500px;
+    transition-duration:0.1s;
+}
+#func2:hover #Func2Image{
+    background-image: url('../img/img-color-change-2.png');
+    background-position: center;
+    background-size: 500px;
+    transition-duration:0.1s;
+
+}
 
 /* CONTACT ME */
 

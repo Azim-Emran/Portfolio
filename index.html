@@ -13,7 +13,20 @@
 
 <body>
     <div class="wrapper">
-        <script language="javascript" type="text/javascript" src="./txt/nav.txt"></script>
+        <nav><a href="javascript:void(0);" class="icon-function content-margin" onclick="navBarFunction()">
+                <div class="burger-icon" onclick="burgerFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <ul class="content-margin navbar-list" id="navBarList">
+                <li><a href="#">Top</a></li>
+                <li><a href="#introductionDiv">About Me</a></li>
+                <li><a href="#languagesUsedDiv">Development Languages Used</a></li>
+                <li><a href="#functionDiv">Website Functions</a></li>
+            </ul>
+        </nav>
         <div class="content">
             <!-- ###### HEADER SECTION STARTS ####### -->
             <header>
@@ -138,10 +151,10 @@
                     <div class="c-container">
                         <!-- FIRST ROW FOR FUNCTIONS SECTION -->
                         <div class="row card-row-container">
-                            <a class="card-link" href="">
+                            <a class="card-link" id="func1" href="functions.html#title1">
                                 <div class="col-4 col-s-6">
                                     <div class="card">
-                                        <div class="img-container" id=""></div>
+                                        <div class="img-container" id="Func1Image"></div>
                                         <div class="card-content">
                                             <h2 class="card-title">Show History</h2>
                                             <div class="card-text-container">
@@ -152,16 +165,18 @@
                                     </div>
                                 </div>
                             </a>
-                            <div class="col-4 col-s-6">
-                                <div class="card">
-                                    <div class="img-container" id=""></div>
-                                    <div class="card-content">
-                                        <h2 class="card-title">Color Swap</h2>
-                                        <p class="card-text">User press the button and colors in the website would
-                                            change.</p>
+                            <a class="card-link" id="func2" href="functions.html#title2">
+                                <div class="col-4 col-s-6">
+                                    <div class="card">
+                                        <div class="img-container" id="Func2Image"></div>
+                                        <div class="card-content">
+                                            <h2 class="card-title">Color Swap</h2>
+                                            <p class="card-text">User press the button and colors in the website would
+                                                change.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                         </div>
                     </div>
